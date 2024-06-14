@@ -1,0 +1,108 @@
+﻿<Window x:Class="engCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:engCalculator"
+        mc:Ignorable="d"
+        Title="Calculator by RePuckByXatab Vozzhennikoffa" Width="450" Height="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="Auto" ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="textBox" Grid.Row="0" Grid.Column="0" KeyDown="textBox_KeyDown"  Text="Area of calculating..." />
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Column="0" Width="100" Height="40" x:Name="plus" Click="plus_Click"  Content="+"/>
+                <Button Grid.Column="1" Width="100" Height="40" x:Name="minus" Click="minus_Click"  Content="-"/>
+                <Button Grid.Column="2" Width="100" Height="40" x:Name="multiple" Click="multiple_Click"  Content="*"/>
+                <Button Grid.Column="3" Width="100" Height="40" x:Name="demultiple" Click="demultiple_Click"  Content="/"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Column="0" Width="100" Height="40" x:Name="sin" Click="sin_Click"  Content="sin"/>
+                <Button Grid.Column="1" Width="100" Height="40" x:Name="cos" Click="cos_Click"  Content="cos"/>
+                <Button Grid.Column="2" Width="100" Height="40" x:Name="tg" Click="tg_Click"  Content="tg"/>
+                <Button Grid.Column="3" Width="100" Height="40" x:Name="cot" Click="cot_Click"  Content="cot"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Column="0" Width="100" Height="40" x:Name="asin" Click="asin_Click"  Content="asin"/>
+                <Button Grid.Column="1" Width="100" Height="40" x:Name="acos" Click="acos_Click"  Content="acos"/>
+                <Button Grid.Column="2" Width="100" Height="40" x:Name="arctg" Click="arctg_Click"  Content="arctg"/>
+                <Button Grid.Column="3" Width="100" Height="40" x:Name="arcot" Click="arcot_Click"  Content="arcot"/>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Column="0" Width="100" Height="40" x:Name="log" Click="log_Click"  Content="log"/>
+                <Button Grid.Column="1" Width="100" Height="40" x:Name="ln" Click="ln_Click"  Content="ln"/>
+                <Button Grid.Column="2" Width="100" Height="40" x:Name="square" Click="square_Click"  Content="^"/>
+                <Button Grid.Column="3" Width="100" Height="40" x:Name="sqrt" Click="sqrt_Click"  Content="√"/>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <Button Width="100" Height="40" x:Name="e" Click="e_Click"  Content="e"/>
+            </Grid>
+            
+        </Grid>
+        <Button Width="100" Height="40" x:Name="pi" Click="pi_Click"  Content="π"/>
+        <Button Width="400" Height="40" x:Name="summ" Click="summ_Click_1"  Content="="/>
+    </Grid>
+</Window>
